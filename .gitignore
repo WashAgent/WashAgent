@@ -1,6 +1,6 @@
 
-# Created by https://www.toptal.com/developers/gitignore/api/windows,dbeaver,database,java
-# Edit at https://www.toptal.com/developers/gitignore?templates=windows,dbeaver,database,java
+# Created by https://www.toptal.com/developers/gitignore/api/gradle,java,database,dbeaver,git,windows
+# Edit at https://www.toptal.com/developers/gitignore?templates=gradle,java,database,dbeaver,git,windows
 
 ### Database ###
 *.accdb
@@ -14,12 +14,25 @@
 # ide config file
 .dbeaver-data-sources*.xml
 
+### Git ###
+# Created by git for backups. To disable backups in Git:
+# $ git config --global mergetool.keepBackup false
+*.orig
+.gitignore
+
+# Created by git when using merge tools for conflicts
+*.BACKUP.*
+*.BASE.*
+*.LOCAL.*
+*.REMOTE.*
+*_BACKUP_*.txt
+*_BASE_*.txt
+*_LOCAL_*.txt
+*_REMOTE_*.txt
+
 ### Java ###
 # Compiled class file
 *.class
-.classpath
-.project
-.gitignore
 .settings/
 
 # Log file
@@ -70,4 +83,24 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-# End of https://www.toptal.com/developers/gitignore/api/windows,dbeaver,database,java
+### Gradle ###
+.gradle
+**/build/
+!src/**/build/
+
+# Ignore Gradle GUI config
+gradle-app.setting
+
+# Avoid ignoring Gradle wrapper jar file (.jar files are usually ignored)
+!gradle-wrapper.jar
+
+# Cache of project
+.gradletasknamecache
+
+# Eclipse Gradle plugin generated files
+# Eclipse Core
+.project
+# JDT-specific (Eclipse Java Development Tools)
+.classpath
+
+# End of https://www.toptal.com/developers/gitignore/api/gradle,java,database,dbeaver,git,windows
